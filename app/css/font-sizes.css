@@ -1,0 +1,55 @@
+:root {
+  --type-scale: 1.2;
+  --font-base-size: 1rem;
+  --h5: calc(var(--font-base-size) * var(--type-scale));
+  --h4: calc(var(--h5) * var(--type-scale));
+  --h3: calc(var(--h4) * var(--type-scale));
+  --h2: calc(var(--h3) * var(--type-scale));
+  --h1: calc(var(--h2) * var(--type-scale));
+  --text-sm: calc(var(--font-base-size) / var(--type-scale));
+}
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+p {
+  font-size: var(--font-base-size);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+small,
+.text_small {
+  font-size: var(--text-sm);
+}
+
+@media (min-width: 480px) {
+  :root {
+    --type-scale: 1.2;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --type-scale: 1.25;
+  }
+}

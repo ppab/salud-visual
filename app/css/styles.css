@@ -1,0 +1,80 @@
+.container{
+  max-width: 1200px;
+  min-width: 90vw;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  --columns:16;
+  height: 100vh;
+  background: transparent;
+}
+/*
+[class*="col-"]{
+
+  --width:16;
+  
+  --initialbasis:calc(var(--width) / var(--columns) *100%);
+  --gap:calc((var(--columns) - var(--width)) * .06%);
+  flex-basis: calc(var(--initialbasis) - var(--gap)); 
+}*/
+
+@media (min-width:480px){
+
+  .col-1-7{
+    --width:9;
+   
+    text-align: center;
+ background: blue;
+
+
+  }
+  .col-2-5{
+    --width:7;
+    background:white;
+    text-align: center;
+  
+
+ 
+  }
+}
+
+
+
+section.one {
+
+
+border-bottom-left-radius: 43%;
+
+background-repeat: no-repeat;
+
+background-position: bottom left; 
+background-clip: border-box;
+}
+
+section.alma{
+  
+
+background-image: url('../assets/images/alma_curva.svg');
+background-repeat: no-repeat;
+
+background-size: 550px 300px;
+background-position: -78px -10px; 
+background-clip: border-box;
+}
+
+@media (min-width: 920px) {
+
+  section.alma{
+  
+    
+    background-image: url('../assets/images/alma_curva.svg');
+  
+    
+    background-size:auto;
+    background-position: top left; 
+  
+    }
+}

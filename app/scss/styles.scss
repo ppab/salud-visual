@@ -1,0 +1,44 @@
+
+  @import url("https://use.typekit.net/aix8qzm.css");
+@import 'variables';
+
+
+html,body{
+  margin: 0;
+}
+html{
+    
+font-family: pt-sans-pro, sans-serif;
+font-style: normal;
+font-weight: 300;
+}
+button{
+  border-radius: 40px;
+  font-family: pt-sans-pro, sans-serif;
+
+  font-weight: 800;
+  padding: .5rem 2rem;
+  font-style: normal;
+
+}
+a{
+  text-decoration: none;
+}
+
+
+[class*="content"] {
+    background-color:$p-green;
+    height: 90vh;
+    width: 100vw;
+    text-align: center;
+    color:$p-yellow;
+    h1,h2,h3,h4{
+        color:$p-orange;
+    }
+  }
+  .content2 {
+    background: rgb(119, 30, 104);
+    overflow: hidden;
+  }
+
+
