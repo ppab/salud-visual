@@ -12,33 +12,68 @@ font-family: pt-sans-pro, sans-serif;
 font-style: normal;
 font-weight: 300;
 }
-button{
-  border-radius: 40px;
-  font-family: pt-sans-pro, sans-serif;
 
-  font-weight: 800;
-  padding: .5rem 2rem;
-  font-style: normal;
+
+
+section.home{
+
+  width: 100vh;
+  height: 100vh;
+
+[class*='col1']{
 
 }
-a{
-  text-decoration: none;
+.col-1{
+
+}
+.col-2{
+
+}
+.col-3{
+
+}
+.col-4{
+
+}
+
 }
 
 
-[class*="content"] {
-    background-color:$p-green;
-    height: 90vh;
-    width: 100vw;
-    text-align: center;
-    color:$p-yellow;
-    h1,h2,h3,h4{
-        color:$p-orange;
+
+
+section.servicios{
+
+  h2{
+    text-align:right;
+  }
+  .vision{
+
+    h3{
+      text-align: center;
+    }
+    p{
+       .text-Highlight1{
+         color:$blue;
+
+     }
+       .text-Highlight2{
+         color:$pink;
+
+     }
     }
   }
-  .content2 {
-    background: rgb(119, 30, 104);
-    overflow: hidden;
-  }
+
+}
 
 
+
+section.consulta{
+
+  
+}
+section.optica{
+
+h3{
+  text-align: right;
+}
+}
