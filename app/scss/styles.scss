@@ -2,39 +2,75 @@
   @import url("https://use.typekit.net/aix8qzm.css");
 @import 'variables';
 
+img{
+  width: 100%;
+
+}
+.container{
+  
+  max-width: 82vw;
+  width: 1620vw;
+
+  margin: auto;
+}
 
 html,body{
   margin: 0;
+  padding: 0;
 }
 html{
     
-font-family: pt-sans-pro, sans-serif;
+font-family:Arial, Helvetica, sans-serif, sans-serif;
 font-style: normal;
 font-weight: 300;
 }
 
+ul{
+  display: flex;
+text-decoration: none;
+align-items: center;
+justify-content: space-around;
+
+}
+li{
+  list-style: none;
+}
 
 
 section.home{
-
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
+  background-color: red;
 
-[class*='col1']{
+[class*='col-']{
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  color:white;
+
+  ul{
+    flex-flow:column nowrap;
+    align-items: flex-start;
+  }
 
 }
 .col-1{
+  background: $pink;
+  font-size: 2rem;
 
 }
 .col-2{
-
+  background: $blue;
 }
 .col-3{
-
+  background: $blue;
 }
 .col-4{
-
+  background: $blue;
 }
+
 
 }
 
@@ -42,16 +78,37 @@ section.home{
 
 
 section.servicios{
+  padding-top: 4rem;
+  .row1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1.3rem;
+  }
+ 
+  .row2{
+    margin-top: .8rem;
+    display: grid;
+    grid-template-columns:.891fr 2fr .81fr;
+    gap:1.3rem;
+    overflow: hidden;
+    height: 451px;
+  }
+ 
 
   h2{
     text-align:right;
   }
   .vision{
 
+      padding-top: 2rem;
     h3{
       text-align: center;
     }
     p{
+      font-weight: lighter;
+      letter-spacing: 2px;
+        font-size: 20px;
+      text-align: center;
        .text-Highlight1{
          color:$blue;
 
@@ -63,17 +120,181 @@ section.servicios{
     }
   }
 
+
+
 }
 
 
 
-section.consulta{
+section.consulta-medica{
+
+  text-align: center;
+  .grid-consulta{
+    display: grid;
+    grid-template-columns:.915fr 1fr .9fr;
+    gap:1.3rem;
+
+    [class*='item']{
+    
+      
+    }
+
+    .item-3{
+      display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+
+
+    }
+    .row2{
+   
+      
+      
+
+      ul{
+        margin: 0;
+        height: 100%;
+        padding: 0;
+        flex-direction: column;
+        align-items: start;
+    
+       
+      }
+    }
+    
+  }
+  .pink{
+    color:$pink;
+  }
+
+  p{
+    font-weight: lighter;
+    letter-spacing: 2px;
+      font-size: 20px;
+    text-align: center;
+  }
+  
 
   
 }
 section.optica{
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  background-color: $blue;
+
+  .grid-optica{
+    display: grid;
+    grid-template-columns:1.1fr 0.88fr 1fr;
+    gap:1.3rem;
+  }
+ .col-1,.col-3{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+ .item-1{
+  display: flex;
+  img{
+    height: 116%;
+  }
+  
+ }
+
+ .item-4{
+  img{
+    height: 107%;
+  }
+ }
 
 h3{
   text-align: right;
 }
+}
+
+
+section.padecimientos{
+  background-color: black;
+  color:white;
+  text-align: center;
+  h3{
+    text-align: left;
+  }
+.grid-padecimientos{
+  gap:1.3rem;
+  display:grid;
+  grid-template-columns:1fr 1fr 1.2fr 1fr 1fr ;
+}
+
+
+}
+
+section.estudios-de-gabinete{
+
+  .grid-estudios-de-gabinete{
+    gap:1.3rem;
+display: grid;
+    grid-template-columns:1fr .9fr 1fr ;
+    grid-template-rows: auto;
+  }
+
+  ul{
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    flex-direction: column;
+    align-items: start;
+
+  }
+
+  .col-1,.col-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h3,p{
+    text-align: center;
+  }
+
+  p{
+    font-weight: lighter;
+    letter-spacing: 2px;
+      font-size: 20px;
+    text-align: center;
+  }
+  .pink{
+    color:$pink;
+  }
+  
+}
+
+
+
+section.laser{
+  background-color: $blue;
+
+ 
+
+  .grid-laser{
+    display: grid;
+  grid-template-columns: .9fr .9fr 1fr;
+  gap:1.3rem;
+
+
+
+  .col-1,.col-2{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+}
+
+
+section.redes{
+  text-align: center;
+  color:white;
+  background-color: $pink;
 }
