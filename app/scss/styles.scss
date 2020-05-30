@@ -139,9 +139,12 @@ section.servicios {
   }
 
   .vision {
+    padding-top:2rem;
     padding-bottom: 5rem;
  
     h3 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
       text-align: center;
     }
     p {
@@ -161,6 +164,7 @@ section.servicios {
 }
 
 section.consulta-medica {
+  padding-top: 10rem;
   padding-bottom: 5rem;
 
   .header {
@@ -221,7 +225,7 @@ padding-top: 2rem;
 }
 section.optica {
   padding-top: 4rem;
-  padding-bottom: 6rem;
+  padding-bottom: 10rem;
   background-color: $blue;
 
   .grid-optica {
@@ -349,8 +353,8 @@ section.contamos {
 
 section.laser {
   background-color: $blue;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 10rem;
 
   .item-1,
   .item-3 {
@@ -372,6 +376,10 @@ section.laser {
 }
 
 section.redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
   text-align: center;
   color: white;
   background-color: $pink;
