@@ -119,6 +119,14 @@ section.servicios {
   .nav-servicios{
     li {
       font-size: 27px;
+      a{
+        text-decoration: none;
+        color:black
+      }
+      a:hover{
+        font-weight: 400;
+        color:$blue;
+      }
     }
 
     .pinkbar{
@@ -298,6 +306,9 @@ section.estudios-de-gabinete {
     padding: 0;
     flex-direction: column;
     align-items: start;
+    li{
+      font-size: 22px;
+    }
   }
 
   .col-1,
