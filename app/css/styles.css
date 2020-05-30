@@ -16,3 +16,15 @@
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
  
 }
+
+
+section.consulta-medica,section.estudios-de-gabinete {
+
+
+    background-image: url('../assets/images/bacgroun1.svg');
+    background-position:bottom right;
+    background-repeat: no-repeat;
+    background-size:535px 589px;
+    
+  
+}

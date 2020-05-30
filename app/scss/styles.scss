@@ -1,300 +1,367 @@
+@import url("https://use.typekit.net/aix8qzm.css");
+@import "variables";
 
-  @import url("https://use.typekit.net/aix8qzm.css");
-@import 'variables';
-
-img{
+img {
   width: 100%;
-
 }
-.container{
-  
+.container {
   max-width: 82vw;
   width: 1620vw;
 
   margin: auto;
 }
 
-html,body{
+html,
+body {
   margin: 0;
   padding: 0;
 }
-html{
-    
-font-family:Arial, Helvetica, sans-serif, sans-serif;
-font-style: normal;
-font-weight: 300;
+p {
+  font-weight: 300;
 }
 
-ul{
+body {
+  font-family: "Nunito", "Roboto", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 36px;
+  letter-spacing: 6px;
+  font-weight: 300;
+}
+h3 {
+  font-size: 32px;
+  font-weight: normal;
+  letter-spacing: 4px;
+}
+ul {
   display: flex;
-text-decoration: none;
-align-items: center;
-justify-content: space-around;
-
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-around;
 }
-li{
+li {
   list-style: none;
 }
 
-
-section.home{
+section.home {
   width: 100vw;
   height: 100vh;
-  background-color: red;
 
-[class*='col-']{
 
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
-  color:white;
 
-  ul{
-    flex-flow:column nowrap;
-    align-items: flex-start;
+ 
+  [class*="col-"] {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    ul {
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      h4 {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0.8rem;
+        letter-spacing: 1px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
   }
-
-}
-.col-1{
-  background: $pink;
-  font-size: 2rem;
-
-}
-.col-2{
-  background: $blue;
-}
-.col-3{
-  background: $blue;
-}
-.col-4{
-  background: $blue;
+  .col-1 {
+    background: $pink;
+    font-size: 2rem;
+  }
+  .col-2 {
+    background: $blue;
+  }
+  .col-3 {
+    background: $blue;
+  }
+  .col-4 {
+    background: $blue;
+  }
 }
 
-
-}
-
-
-
-
-section.servicios{
+section.servicios {
   padding-top: 4rem;
-  .row1{
+  .row1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:1.3rem;
+    gap: 1.3rem;
   }
- 
-  .row2{
-    margin-top: .8rem;
+
+  .row2 {
+    margin-top: 0.8rem;
     display: grid;
-    grid-template-columns:.891fr 2fr .81fr;
-    gap:1.3rem;
+    grid-template-columns: 0.891fr 2fr 0.81fr;
+    gap: 1.3rem;
     overflow: hidden;
     height: 451px;
   }
+
+  h2 {
+    text-align: right;
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+
+
+
+  .nav-servicios{
+    li {
+      font-size: 27px;
+    }
+
+    .pinkbar{
+      background: $pink;
+      width: 100%;
+      height: 10px;
+      margin-top: -1rem;
+      margin-bottom: 8rem;
+    }
+  }
+
+  .vision {
+    padding-bottom: 5rem;
  
-
-  h2{
-    text-align:right;
-  }
-  .vision{
-
-      padding-top: 2rem;
-    h3{
+    h3 {
       text-align: center;
     }
-    p{
+    p {
       font-weight: lighter;
-      letter-spacing: 2px;
-        font-size: 20px;
+      letter-spacing: 1px;
+      font-size: 20px;
       text-align: center;
-       .text-Highlight1{
-         color:$blue;
 
-     }
-       .text-Highlight2{
-         color:$pink;
-
-     }
+      .text-Highlight1 {
+        color: $blue;
+      }
+      .text-Highlight2 {
+        color: $pink;
+      }
     }
   }
-
-
-
 }
 
+section.consulta-medica {
+  padding-bottom: 5rem;
 
+  .header {
+    display: flex;
+    flex-direction: row;
 
-section.consulta-medica{
+    .title {
+      text-align: left;
 
+      font-size: 32px;
+      font-weight: 300;
+      letter-spacing: 6px;
+
+      .blue {
+        color: $blue;
+        margin-top: -7px;
+      }
+    }
+  }
   text-align: center;
-  .grid-consulta{
+  .grid-consulta {
     display: grid;
-    grid-template-columns:.915fr 1fr .9fr;
-    gap:1.3rem;
+    grid-template-columns: 0.915fr 1fr 0.9fr;
+    gap: 1.3rem;
 
-    [class*='item']{
-    
-      
+    [class*="item"] {
     }
 
-    .item-3{
+    .item-3 {
       display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-
-
-
+      flex-flow: column;
+      justify-content: space-between;
     }
-    .row2{
-   
-      
-      
-
-      ul{
+    .row2 {
+      ul {
         margin: 0;
         height: 100%;
         padding: 0;
         flex-direction: column;
         align-items: start;
-    
-       
+        font-size: 22px;
       }
     }
-    
   }
-  .pink{
-    color:$pink;
+  .pink {
+    color: $pink;
+  }
+  h3{
+padding-top: 2rem;
   }
 
-  p{
+  p {
     font-weight: lighter;
-    letter-spacing: 2px;
-      font-size: 20px;
+
+    font-size: 20px;
     text-align: center;
   }
-  
-
-  
 }
-section.optica{
+section.optica {
   padding-top: 4rem;
   padding-bottom: 6rem;
   background-color: $blue;
 
-  .grid-optica{
+  .grid-optica {
     display: grid;
-    grid-template-columns:1.1fr 0.88fr 1fr;
-    gap:1.3rem;
+    grid-template-columns: 1.1fr 0.88fr 1fr;
+    gap: 1.3rem;
   }
- .col-1,.col-3{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
- }
- .item-1{
-  display: flex;
-  img{
-    height: 116%;
+  .col-1,
+  .col-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  
- }
+  .item-1 {
+    display: flex;
+    img {
+      height: 116%;
+    }
+  }
 
- .item-4{
-  img{
-    height: 107%;
+  .item-4 {
+    img {
+      height: 107%;
+    }
   }
- }
 
-h3{
-  text-align: right;
+  h3 {
+    text-align: right;
+  }
 }
-}
 
-
-section.padecimientos{
+section.padecimientos {
   background-color: black;
-  color:white;
+  color: white;
   text-align: center;
-  h3{
-    text-align: left;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  h2 {
+    font-size: 32px;
+    margin: 0;
+    padding-bottom: 2rem;
   }
-.grid-padecimientos{
-  gap:1.3rem;
-  display:grid;
-  grid-template-columns:1fr 1fr 1.2fr 1fr 1fr ;
+
+  .grid-padecimientos {
+    gap: 1.3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1.07fr;
+  }
 }
 
+section.estudios-de-gabinete {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  .header {
+    display: flex;
+    flex-direction: row;
 
-}
+    .title {
+      text-align: left;
 
-section.estudios-de-gabinete{
+      font-size: 32px;
+      font-weight: 300;
+      letter-spacing: 6px;
 
-  .grid-estudios-de-gabinete{
-    gap:1.3rem;
-display: grid;
-    grid-template-columns:1fr .9fr 1fr ;
+      .blue {
+        color: $blue;
+        margin-top: -7px;
+      }
+    }
+  }
+
+  .grid-estudios-de-gabinete {
+    gap: 1.3rem;
+    display: grid;
+    grid-template-columns: 1fr 0.9fr 1fr;
     grid-template-rows: auto;
   }
 
-  ul{
+  ul {
     margin: 0;
     height: 100%;
     padding: 0;
     flex-direction: column;
     align-items: start;
-
   }
 
-  .col-1,.col-3{
+  .col-1,
+  .col-3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  h3,p{
-    text-align: center;
-  }
-
-  p{
-    font-weight: lighter;
-    letter-spacing: 2px;
-      font-size: 20px;
-    text-align: center;
-  }
-  .pink{
-    color:$pink;
-  }
-  
-}
-
-
-
-section.laser{
-  background-color: $blue;
-
- 
-
-  .grid-laser{
-    display: grid;
-  grid-template-columns: .9fr .9fr 1fr;
-  gap:1.3rem;
-
-
-
-  .col-1,.col-2{
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-
-}
-
-
-section.redes{
+  h3 {
+  padding-top: 2rem;
   text-align: center;
-  color:white;
+  }
+
+  p {
+    text-align: center;
+    font-weight: lighter;
+
+    font-size: 20px;
+    text-align: center;
+
+   
+  }
+  .pink {
+    color: $pink;
+  }
+}
+
+section.contamos {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+  p {
+    font-size: 22px;
+  }
+}
+
+section.laser {
+  background-color: $blue;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .item-1,
+  .item-3 {
+    padding-bottom: 1rem;
+  }
+
+  .grid-laser {
+    display: grid;
+    grid-template-columns: 0.994fr 0.77fr 0.931fr;
+
+    gap: 1.3rem;
+
+    .col-1,
+    .col-2 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+section.redes {
+  text-align: center;
+  color: white;
   background-color: $pink;
 }
