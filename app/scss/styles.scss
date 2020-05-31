@@ -5,9 +5,9 @@ img {
   width: 100%;
 }
 .container {
-  max-width: 82vw;
-  width: 1620vw;
-
+  max-width:82vw;
+  width:1400px;
+ 
   margin: auto;
 }
 
@@ -49,9 +49,50 @@ li {
 section.home {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 
+  .home-row1{
+display: flex;
+flex-flow: row wrap;
+padding-top: 2rem;
+  }
+.logo_saludvisual{
+  width: 200px;
 
+  margin-left: 3.75rem;
+  height: 200px;
+}
+nav{
 
+  color:white;
+  flex-basis:600px;
+  margin-left: auto;
+  margin-right: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  /*mob
+
+  ul{
+    padding:0
+  }
+   justify-content: flex-start;
+   
+   background:black;
+   flex-basis:100%;
+   margin:0;
+   */
+  
+  a{
+color:white;
+text-decoration: none;
+  }
+  a:hover{
+    border-bottom: 1px solid white;
+  }
+  
+}
  
   [class*="col-"] {
     display: flex;
@@ -59,10 +100,18 @@ section.home {
     align-items: center;
     justify-content: center;
     color: white;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    a:hover{
+      border-bottom: 1px solid white;
+    }
 
     ul {
       flex-flow: column nowrap;
       align-items: flex-start;
+      
       h4 {
         font-size: 1.2rem;
         margin: 0;
@@ -70,15 +119,16 @@ section.home {
         margin-bottom: 0.8rem;
         letter-spacing: 1px;
       }
-      a {
-        text-decoration: none;
-        color: white;
+      li:nth-of-type(3) {
+        padding-top: 8px;
       }
     }
   }
   .col-1 {
     background: $pink;
     font-size: 2rem;
+   
+    
   }
   .col-2 {
     background: $blue;
@@ -92,6 +142,15 @@ section.home {
 }
 
 section.servicios {
+
+.logo-2{
+
+  margin-top: -4rem;
+  margin-bottom: 6rem;
+}
+
+
+
   padding-top: 4rem;
   .row1 {
     display: grid;
@@ -117,6 +176,7 @@ section.servicios {
 
 
   .nav-servicios{
+    position: relative;
     li {
       font-size: 27px;
       a{
@@ -164,12 +224,17 @@ section.servicios {
 }
 
 section.consulta-medica {
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
 
   .header {
+    padding-bottom: 3rem;
     display: flex;
     flex-direction: row;
+   
+    [class*='col-']{
+      display: inline;
+    }
 
     .title {
       text-align: left;
@@ -177,11 +242,26 @@ section.consulta-medica {
       font-size: 32px;
       font-weight: 300;
       letter-spacing: 6px;
+     
 
       .blue {
         color: $blue;
         margin-top: -7px;
       }
+    }
+
+    .col-2{
+      width: 86px;
+      margin-right:4rem ;
+      margin-left:2rem ;
+      img{
+        width: 125%;
+      }
+    }
+    .col-3{
+    
+      width: 100%;
+
     }
   }
   text-align: center;
@@ -227,6 +307,19 @@ section.optica {
   padding-top: 4rem;
   padding-bottom: 10rem;
   background-color: $blue;
+  .header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 3rem;
+    h2{
+      display: inline;
+    }
+    .optica-img{
+      margin-left: 8rem;
+      width: 93px;
+    }
+  }
 
   .grid-optica {
     display: grid;
@@ -252,9 +345,7 @@ section.optica {
     }
   }
 
-  h3 {
-    text-align: right;
-  }
+
 }
 
 section.padecimientos {
@@ -281,12 +372,35 @@ section.estudios-de-gabinete {
   padding-bottom: 5rem;
   .header {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+
+  
+
+        .col-1{ 
+       
+          flex-grow:1 ;
+          display: flex;
+          flex-wrap: nowrap;
+          img{
+            width: 89px;
+            position: relative;
+            top: -102px;
+            right: -323px;
+          }
+        }
+      
+        .col-3{
+          flex-grow:5;
+        
+      
+        }
+
+
 
     .title {
       text-align: left;
 
-      font-size: 32px;
+      font-size: 38px;
       font-weight: 300;
       letter-spacing: 6px;
 
@@ -297,6 +411,7 @@ section.estudios-de-gabinete {
     }
   }
 
+  
   .grid-estudios-de-gabinete {
     gap: 1.3rem;
     display: grid;
@@ -363,7 +478,8 @@ section.laser {
 
   .grid-laser {
     display: grid;
-    grid-template-columns: 0.994fr 0.77fr 0.931fr;
+    /*grid-template-columns: 0.994fr 0.77fr 0.931fr;*/
+    grid-template-columns:0.994fr 0.77fr 0.913fr;
 
     gap: 1.3rem;
 
@@ -371,6 +487,14 @@ section.laser {
     .col-2 {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+    }
+
+
+    .item-5{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
 }
@@ -379,7 +503,7 @@ section.redes {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 100vh;
   text-align: center;
   color: white;
   background-color: $pink;
