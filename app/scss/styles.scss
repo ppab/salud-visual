@@ -5,9 +5,9 @@ img {
   width: 100%;
 }
 .container {
-  max-width:82vw;
-  width:1400px;
- 
+  max-width: 82vw;
+  width: 1400px;
+
   margin: auto;
 }
 
@@ -49,30 +49,33 @@ li {
 section.home {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-
-  .home-row1{
-display: flex;
-flex-flow: row wrap;
-padding-top: 2rem;
+ 
+  ul{
+    margin: 0;
+    padding: 0;
   }
-.logo_saludvisual{
-  width: 200px;
 
-  margin-left: 3.75rem;
-  height: 200px;
-}
-nav{
+  .home-row1 {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 2rem;
+  }
+  .logo_saludvisual {
+    width: 200px;
 
-  color:white;
-  flex-basis:600px;
-  margin-left: auto;
-  margin-right: 8%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  
-  /*mob
+    margin-left: 3.75rem;
+    height: 200px;
+  }
+  nav {
+    color: white;
+    flex-basis: 600px;
+    margin-left: auto;
+    margin-right: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    /*mob
 
   ul{
     padding:0
@@ -83,17 +86,16 @@ nav{
    flex-basis:100%;
    margin:0;
    */
-  
-  a{
-color:white;
-text-decoration: none;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      border-bottom: 1px solid white;
+    }
   }
-  a:hover{
-    border-bottom: 1px solid white;
-  }
-  
-}
- 
+
   [class*="col-"] {
     display: flex;
     flex-flow: row nowrap;
@@ -104,14 +106,14 @@ text-decoration: none;
       text-decoration: none;
       color: white;
     }
-    a:hover{
+    a:hover {
       border-bottom: 1px solid white;
     }
 
     ul {
       flex-flow: column nowrap;
       align-items: flex-start;
-      
+
       h4 {
         font-size: 1.2rem;
         margin: 0;
@@ -127,8 +129,6 @@ text-decoration: none;
   .col-1 {
     background: $pink;
     font-size: 2rem;
-   
-    
   }
   .col-2 {
     background: $blue;
@@ -142,14 +142,10 @@ text-decoration: none;
 }
 
 section.servicios {
-
-.logo-2{
-
-  margin-top: -4rem;
-  margin-bottom: 6rem;
-}
-
-
+  .logo-2 {
+    margin-top: -4rem;
+    margin-bottom: 6rem;
+  }
 
   padding-top: 4rem;
   .row1 {
@@ -173,23 +169,21 @@ section.servicios {
     padding-bottom: 2rem;
   }
 
-
-
-  .nav-servicios{
+  .nav-servicios {
     position: relative;
     li {
       font-size: 27px;
-      a{
+      a {
         text-decoration: none;
-        color:black
+        color: black;
       }
-      a:hover{
+      a:hover {
         font-weight: 400;
-        color:$blue;
+        color: $blue;
       }
     }
 
-    .pinkbar{
+    .pinkbar {
       background: $pink;
       width: 100%;
       height: 10px;
@@ -199,9 +193,9 @@ section.servicios {
   }
 
   .vision {
-    padding-top:2rem;
+    padding-top: 2rem;
     padding-bottom: 5rem;
- 
+
     h3 {
       margin-top: 2rem;
       margin-bottom: 2rem;
@@ -231,8 +225,9 @@ section.consulta-medica {
     padding-bottom: 3rem;
     display: flex;
     flex-direction: row;
-   
-    [class*='col-']{
+    align-items: center;
+
+    [class*="col-"] {
       display: inline;
     }
 
@@ -242,7 +237,6 @@ section.consulta-medica {
       font-size: 32px;
       font-weight: 300;
       letter-spacing: 6px;
-     
 
       .blue {
         color: $blue;
@@ -250,18 +244,16 @@ section.consulta-medica {
       }
     }
 
-    .col-2{
+    .col-2 {
       width: 86px;
-      margin-right:4rem ;
-      margin-left:2rem ;
-      img{
+      margin-right: 4rem;
+      margin-left: 2rem;
+      img {
         width: 125%;
       }
     }
-    .col-3{
-    
+    .col-3 {
       width: 100%;
-
     }
   }
   text-align: center;
@@ -292,8 +284,8 @@ section.consulta-medica {
   .pink {
     color: $pink;
   }
-  h3{
-padding-top: 2rem;
+  h3 {
+    padding-top: 2rem;
   }
 
   p {
@@ -307,15 +299,15 @@ section.optica {
   padding-top: 4rem;
   padding-bottom: 10rem;
   background-color: $blue;
-  .header{
+  .header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-bottom: 3rem;
-    h2{
+    h2 {
       display: inline;
     }
-    .optica-img{
+    .optica-img {
       margin-left: 8rem;
       width: 93px;
     }
@@ -344,8 +336,6 @@ section.optica {
       height: 107%;
     }
   }
-
-
 }
 
 section.padecimientos {
@@ -373,34 +363,29 @@ section.estudios-de-gabinete {
   .header {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 4rem;
 
-  
+    .col-1 {
+      flex-basis: 35%;
+      height: 84px;
+      img {
+        width: 20%;
+        position: relative;
+        top: -88px;
+        right: -323px;
+      }
+    }
 
-        .col-1{ 
-       
-          flex-grow:1 ;
-          display: flex;
-          flex-wrap: nowrap;
-          img{
-            width: 89px;
-            position: relative;
-            top: -102px;
-            right: -323px;
-          }
-        }
-      
-        .col-3{
-          flex-grow:5;
-        
-      
-        }
-
-
+    .col-3 {
+      flex-basis: 60%;
+      margin-left: auto;
+    }
 
     .title {
       text-align: left;
-
-      font-size: 38px;
+      width: 271px;
+      font-size: 32px;
       font-weight: 300;
       letter-spacing: 6px;
 
@@ -411,7 +396,6 @@ section.estudios-de-gabinete {
     }
   }
 
-  
   .grid-estudios-de-gabinete {
     gap: 1.3rem;
     display: grid;
@@ -425,7 +409,7 @@ section.estudios-de-gabinete {
     padding: 0;
     flex-direction: column;
     align-items: start;
-    li{
+    li {
       font-size: 22px;
     }
   }
@@ -438,8 +422,8 @@ section.estudios-de-gabinete {
   }
 
   h3 {
-  padding-top: 2rem;
-  text-align: center;
+    padding-top: 2rem;
+    text-align: center;
   }
 
   p {
@@ -448,8 +432,6 @@ section.estudios-de-gabinete {
 
     font-size: 20px;
     text-align: center;
-
-   
   }
   .pink {
     color: $pink;
@@ -471,6 +453,20 @@ section.laser {
   padding-top: 4rem;
   padding-bottom: 10rem;
 
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 3rem;
+    h2 {
+      display: inline;
+    }
+    .laser-img {
+      margin-left: 8rem;
+      width: 93px;
+    }
+  }
+
   .item-1,
   .item-3 {
     padding-bottom: 1rem;
@@ -479,7 +475,7 @@ section.laser {
   .grid-laser {
     display: grid;
     /*grid-template-columns: 0.994fr 0.77fr 0.931fr;*/
-    grid-template-columns:0.994fr 0.77fr 0.913fr;
+    grid-template-columns: 0.994fr 0.77fr 0.913fr;
 
     gap: 1.3rem;
 
@@ -490,11 +486,56 @@ section.laser {
       justify-content: space-between;
     }
 
-
-    .item-5{
+    .item-5 {
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
+  }
+}
+section.ubicacion {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  .header2 {
+    h2 {
+      font-size: 27px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+    .col-2 {
+      margin-right: 20%;
+      color: $blue;
+    }
+  }
+
+  .logo-2 {
+    margin-top: -3rem;
+  }
+
+  .row2 {
+    display: flex;
+    padding-bottom: 6rem;
+
+    .direccion {
+      flex-basis: 35%;
+
+      .adress {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .forma {
+    flex-basis: 60%;
+    margin-left: auto;
+
+    form {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
@@ -503,8 +544,22 @@ section.redes {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 50vh;
   text-align: center;
   color: white;
   background-color: $pink;
+
+  .logo_saludvisual {
+    margin-bottom: 2rem;
+    width: 142px;
+    margin: auto;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    a {
+      padding: 0.2rem;
+    }
+  }
 }

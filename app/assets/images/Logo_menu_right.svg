@@ -1,20 +1,16 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250.82 69.18">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #231f20;
-      }
-
-      .cls-2 {
-        fill: #e80088;
-      }
-    </style>
-  </defs>
-  <g>
-    <path class="cls-1" d="M1271.46,50h-26.19V42.41h17.34v-5.1h-15.5V30.24h15.5V25.35h-17.12V17.74h26Z" transform="translate(-57.59 -17.74)"/>
-    <path class="cls-1" d="M1276.53,54.62h26v7.61h-17.12v4.9h15.5v7.06h-15.5V79.3h17.34v7.61h-26.19Z" transform="translate(-57.59 -17.74)"/>
-    <path class="cls-1" d="M1308.41,25V51.21h-7.61V33.87h-5.12V49.36h-7.06V33.87h-4.88V51h-7.61V25Z" transform="translate(-57.59 -17.74)"/>
-    <path class="cls-2" d="M1239.12,80.74v-26h7.62v17.1h4.88V56.39h7.06V71.88h5.11V54.54h7.61v26.2Z" transform="translate(-57.59 -17.74)"/>
-    <rect class="cls-2" x="57.59" y="54.76" width="1181.53" height="7.46" transform="translate(1239.12 99.25) rotate(-180)"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Logo-Menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1257.6 96" style="enable-background:new 0 0 1257.6 96;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#231F20;}
+	.st1{fill:#E80088;}
+</style>
+<g>
+	<path class="st0" d="M1206.3,44.8H1170V34.3h24.1v-7.1h-21.5v-9.8h21.5v-6.8h-23.7V0l36,0V44.8z"/>
+	<path class="st0" d="M1213.4,51.2h36v10.6h-23.8v6.8h21.5v9.8h-21.5v7.1h24.1V96h-36.3L1213.4,51.2z"/>
+	<path class="st0" d="M1257.6,10.1v36.3H1247V22.4h-7.1v21.5h-9.8V22.4h-6.8v23.7h-10.6v-36H1257.6z"/>
+	<path class="st1" d="M1161.5,87.4v-36h10.6v23.7h6.8V53.6h9.8v21.5h7.1V51.1h10.6v36.3L1161.5,87.4z"/>
+	<rect x="0" y="51.4" class="st1" width="1161.4" height="10.4"/>
+</g>
 </svg>

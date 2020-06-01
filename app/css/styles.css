@@ -4,14 +4,14 @@
   
 }
 .home-row1{
-  height: 80%;
+  height:75vh;
   background-image: url('../assets/images/baner_1.jpg');
   background-position: center top;
   background-size: cover;
 }
 
 .home-row-2{
-  height: 20%;
+  height: 25vh;
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
  
@@ -35,7 +35,7 @@ section.consulta-medica,section.estudios-de-gabinete {
   height: 2rem;
   background-image: url('../assets/images/eeee.svg');
   margin-bottom: 4rem;
-  margin-top: -5rem;
+  display: none;
 }
 
 @media (min-width:700px){
