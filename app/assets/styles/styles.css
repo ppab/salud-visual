@@ -6,9 +6,10 @@ section.home {
 
 .home-row1{
   height:75vh;
-  background-image: url('../app/assets/images/baner_1.jpg');
+  background-image: url('./assets/images/baner_1.jpg');
   background-position: center top;
   background-size: cover;
+  /*erase*/
 }
 
 .home-row-2{
@@ -36,6 +37,7 @@ section.consulta-medica,section.estudios-de-gabinete {
   height: 2rem;
   background-image: url('../assets/images/eeee.svg');
   margin-bottom: 4rem;
+  display: none;
   
 }
 
