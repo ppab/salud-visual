@@ -37,6 +37,7 @@
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "animate.css": "^4.1.0",
+    "jquery": "^3.5.1",
     "owl.carousel": "^2.3.4"
   }
 }

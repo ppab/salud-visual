@@ -3,7 +3,6 @@
 
 
 
-
 $pink:#e80a89;
 $blue:#61bec2;
 
@@ -30,6 +29,7 @@ body {
   font-family: "Nunito", "Roboto", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -439,7 +439,8 @@ section.padecimientos {
 }
 
 section.estudios-de-gabinete {
-  padding-top: 10rem;
+  margin-top: 6rem;
+  padding-top: 4rem;
   padding-bottom: 5rem;
   .header {
     padding-left: 9%;
@@ -449,18 +450,18 @@ section.estudios-de-gabinete {
     margin-bottom: 4rem;
 
     .col-1 {
-      flex-basis: 35%;
+      flex-basis: 30%;
       height: 84px;
-      img {
+      .icon-gabinete{
         width: 20%;
         position: relative;
-        top: -88px;
+        top: -101px;
         right: -323px;
       }
     }
 
     .col-3 {
-      flex-basis: 60%;
+      flex-basis: 68.5%;
       margin-left: auto;
     }
 
