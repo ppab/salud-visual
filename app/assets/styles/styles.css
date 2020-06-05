@@ -1,52 +1,6 @@
 
 @import url("https://use.typekit.net/aix8qzm.css");
 
-section.home {
-
-
-.home-row1{
-  height:75vh;
-  background-image: url('./assets/images/baner_1.jpg');
-  background-position: center top;
-  background-size: cover;
-  /*erase*/
-}
-
-.home-row-2{
-  height: 25vh;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
- 
-}
-}
-
-section.consulta-medica,section.estudios-de-gabinete {
-
-
-    background-image: url('/app/assets/images/baner_1.jpg');
-    background-position:bottom right;
-    background-repeat: no-repeat;
-    background-size:535px 589px;
-    
-  
-}
-
-
-.mobile-var{
-  width: 100%;
-  height: 2rem;
-  background-image: url('../assets/images/eeee.svg');
-  margin-bottom: 4rem;
-  display: none;
-  
-}
-
-@media (min-width:700px){
-  .mobile-var{
-
-    /*erase*/
-}
-}
 
 
 
@@ -97,6 +51,64 @@ ul {
 li {
   list-style: none;
 }
+
+
+section.home {
+
+
+  .home-row1{
+    height:75vh;
+    background-image: url('./assets/images/baner_1.jpg');
+    background-position: center top;
+    background-size: cover;
+    /*erase*/
+  }
+  
+  .home-row-2{
+    height: 25vh;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  
+    [class*='col-']{
+      h4{
+        font-weight: bold;
+       
+      }
+    }
+  
+   
+  }
+  }
+  
+  section.consulta-medica,section.estudios-de-gabinete {
+  
+  
+      background-image: url('/app/assets/images/baner_1.jpg');
+      background-position:bottom right;
+      background-repeat: no-repeat;
+      background-size:535px 589px;
+      
+    
+  }
+  
+  
+  .mobile-var{
+    width: 100%;
+    height: 2rem;
+    background-image: url('../assets/images/eeee.svg');
+    margin-bottom: 4rem;
+    display: none;
+    
+  }
+  
+  @media (min-width:700px){
+    .mobile-var{
+  
+      /*erase*/
+  }
+  }
+  
+
 
 section.home {
   width: 100vw;
@@ -256,7 +268,7 @@ section.servicios {
     p {
       font-weight: lighter;
       letter-spacing: 1px;
-      font-size: 20px;
+      font-size: 24px;
       text-align: center;
 
       .text-Highlight1 {
@@ -275,6 +287,7 @@ section.consulta-medica {
 
   .header {
     padding-bottom: 3rem;
+    padding-left: 9%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -343,7 +356,7 @@ section.consulta-medica {
   p {
     font-weight: lighter;
 
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
   }
 }
@@ -352,12 +365,14 @@ section.optica {
   padding-bottom: 10rem;
   background-color: $blue;
   .header {
+    grid-column: 3;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 3rem;
     h2 {
       display: inline;
+      color: white;
     }
     .optica-img {
       margin-left: 8rem;
@@ -406,6 +421,20 @@ section.padecimientos {
     gap: 1.3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1.07fr;
+    [class*=col-]{
+      div{
+        padding-top: 2rem;
+        font-size: 20px;
+      }
+    }
+
+    .col-3{
+      padding-top: 1rem;
+      .logo_saludvisual{
+        width: 80%;
+        margin: auto;
+      }
+    }
   }
 }
 
@@ -413,6 +442,7 @@ section.estudios-de-gabinete {
   padding-top: 10rem;
   padding-bottom: 5rem;
   .header {
+    padding-left: 9%;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -482,7 +512,7 @@ section.estudios-de-gabinete {
     text-align: center;
     font-weight: lighter;
 
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
   }
   .pink {
@@ -496,7 +526,7 @@ section.contamos {
   padding-bottom: 3rem;
 
   p {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
@@ -506,12 +536,14 @@ section.laser {
   padding-bottom: 10rem;
 
   .header {
+    grid-column: 3;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 3rem;
     h2 {
       display: inline;
+      color:white
     }
     .laser-img {
       margin-left: 8rem;
