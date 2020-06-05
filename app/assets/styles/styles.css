@@ -1,10 +1,7 @@
-
 @import url("https://use.typekit.net/aix8qzm.css");
 
-
-
-$pink:#e80a89;
-$blue:#61bec2;
+$pink: #e80a89;
+$blue: #61bec2;
 
 img {
   width: 100%;
@@ -25,12 +22,66 @@ p {
   font-weight: 300;
 }
 
-body {
+body{
   font-family: "Nunito", "Roboto", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
-  scroll-behavior: smooth;
+  font-size: 16px;
 }
+
+form input{
+  margin-bottom: 2rem;
+}
+input,
+textarea {
+  font-family: "Nunito", "Roboto", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+ padding: .5rem 0;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  border-top: none;
+  border-bottom: 1px solid #DDD;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+}
+
+input,textarea{
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 20px;
+  text-indent: 40px;
+  background-color:#f5f5f5;
+  border: none;
+}
+
+input[type=submit]{
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #61bec2;
+  width: 20%;
+  text-align: center;
+  margin-left: auto;
+  text-indent: 0px;
+  margin-top: 1rem;
+}
+input#nombre{
+  background-image: url("http://www.clker.com/cliparts/0/5/3/e/11949946071992273737kopeteaway.svg.thumb.png");
+}
+
+
+/*cllear image
+
+input#nombre:focus {
+  background-image: none;
+  text-indent: 0px;
+}
+*/
+
 
 h2 {
   font-size: 36px;
@@ -52,69 +103,55 @@ li {
   list-style: none;
 }
 
-
 section.home {
-
-
-  .home-row1{
-    height:75vh;
-    background-image: url('./assets/images/baner_1.jpg');
+  .home-row1 {
+    height: 75vh;
+    background-image: url("./assets/images/baner_1.jpg");
     background-position: center top;
     background-size: cover;
     /*erase*/
   }
-  
-  .home-row-2{
+
+  .home-row-2 {
     height: 25vh;
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  
-    [class*='col-']{
-      h4{
+
+    [class*="col-"] {
+      h4 {
         font-weight: bold;
-       
       }
     }
-  
-   
   }
-  }
-  
-  section.consulta-medica,section.estudios-de-gabinete {
-  
-  
-      background-image: url('../assets/images/bacground1.svg');
-      background-position:bottom right;
-      background-repeat: no-repeat;
-      background-size:535px 589px;
-      
-    
-  }
-  
-  
-  .mobile-var{
-    width: 100%;
-    height: 2rem;
-    background-image: url('../assets/images/eeee.svg');
-    margin-bottom: 4rem;
-    display: none;
-    
-  }
-  
-  @media (min-width:700px){
-    .mobile-var{
-  
-      /*erase*/
-  }
-  }
-  
+}
 
+section.consulta-medica,
+section.estudios-de-gabinete {
+  background-image: url("../assets/images/bacground1.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 535px 589px;
+}
+
+.mobile-var {
+  width: 100%;
+  height: 2rem;
+  background-image: url("../assets/images/eeee.svg");
+  margin-bottom: 4rem;
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .mobile-var {
+    /*erase*/
+  }
+}
 
 section.home {
   width: 100vw;
   height: 100vh;
- 
-  ul{
+
+  ul {
     margin: 0;
     padding: 0;
   }
@@ -206,6 +243,7 @@ section.home {
 }
 
 section.servicios {
+  margin-top: 2.1rem;
   .logo-2 {
     margin-top: -4rem;
     margin-bottom: 6rem;
@@ -421,16 +459,16 @@ section.padecimientos {
     gap: 1.3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1.07fr;
-    [class*=col-]{
-      div{
+    [class*="col-"] {
+      div {
         padding-top: 1.5rem;
         font-size: 20px;
       }
     }
 
-    .col-3{
+    .col-3 {
       padding-top: 1rem;
-      .logo_saludvisual{
+      .logo_saludvisual {
         width: 80%;
         margin: auto;
       }
@@ -452,7 +490,7 @@ section.estudios-de-gabinete {
     .col-1 {
       flex-basis: 30%;
       height: 84px;
-      .icon-gabinete{
+      .icon-gabinete {
         width: 20%;
         position: relative;
         top: -101px;
@@ -544,7 +582,7 @@ section.laser {
     padding-bottom: 3rem;
     h2 {
       display: inline;
-      color:white
+      color: white;
     }
     .laser-img {
       margin-left: 8rem;
@@ -580,7 +618,7 @@ section.laser {
 }
 section.ubicacion {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 7rem;
   .header2 {
     h2 {
       font-size: 27px;
@@ -602,6 +640,7 @@ section.ubicacion {
   }
 
   .row2 {
+    padding-top: 4rem;
     display: flex;
     padding-bottom: 6rem;
 
@@ -629,7 +668,7 @@ section.redes {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 100vh;
   text-align: center;
   color: white;
   background-color: $pink;
