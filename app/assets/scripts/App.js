@@ -37,7 +37,7 @@ ahrefs.forEach(element=>{
             window.scrollBy(0, eAmt);
     }
 
-    SmoothVerticalScrolling( scrollElement,1000,"top");
+    SmoothVerticalScrolling( scrollElement,500,"top");
 
       
     }

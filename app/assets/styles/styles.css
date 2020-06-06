@@ -344,6 +344,7 @@ section.consulta-medica {
     display: flex;
     flex-direction: row;
     align-items: center;
+    max-width: 1675px;
 
     [class*="col-"] {
       display: inline;
@@ -493,6 +494,7 @@ section.estudios-de-gabinete {
     flex-flow: row wrap;
     align-items: center;
     margin-bottom: 4rem;
+    max-width: 1685px;
 
     .col-1 {
       flex-basis: 30%;
