@@ -49,11 +49,15 @@ textarea {
 input,textarea{
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-position: 20px;
+  background-position: 10px;
   text-indent: 40px;
   background-color:#f5f5f5;
   border: none;
 }
+textarea{
+  background-position: 10px 8px;
+}
+
 
 input[type=submit]{
   border: none;
@@ -70,7 +74,16 @@ input[type=submit]{
   margin-top: 1rem;
 }
 input#nombre{
-  background-image: url("http://www.clker.com/cliparts/0/5/3/e/11949946071992273737kopeteaway.svg.thumb.png");
+  background-image: url("../assets/images/Nombre.svg");
+}
+input#correo{
+  background-image: url("../assets/images/Correo.svg");
+}
+input#telefono{
+  background-image: url("../assets/images/Telefono.svg");
+}
+textarea#mensaje{
+  background-image: url("../assets/images/Mensaje.svg");
 }
 
 
@@ -362,7 +375,7 @@ section.consulta-medica {
   text-align: center;
   .grid-consulta {
     display: grid;
-    grid-template-columns: 0.915fr 1fr 0.9fr;
+    grid-template-columns: 0.915fr .9934fr 0.9fr;
     gap: 1.3rem;
 
     [class*="item"] {
@@ -420,8 +433,8 @@ section.optica {
 
   .grid-optica {
     display: grid;
-    grid-template-columns: 1.1fr 0.88fr 1fr;
-    gap: 1.3rem;
+    grid-template-columns: 1fr 0.88fr 1fr;
+    gap: 1.8rem;
   }
   .col-1,
   .col-3 {
@@ -429,18 +442,7 @@ section.optica {
     flex-direction: column;
     justify-content: space-between;
   }
-  .item-1 {
-    display: flex;
-    img {
-      height: 116%;
-    }
-  }
-
-  .item-4 {
-    img {
-      height: 107%;
-    }
-  }
+  
 }
 
 section.padecimientos {
