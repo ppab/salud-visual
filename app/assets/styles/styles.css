@@ -267,6 +267,7 @@ section.servicios {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.3rem;
+    grid-gap: 1.3rem;
   }
 
   .row2 {
@@ -274,6 +275,7 @@ section.servicios {
     display: grid;
     grid-template-columns: 0.891fr 2fr 0.81fr;
     gap: 1.3rem;
+    grid-gap: 1.3rem;
     overflow: hidden;
     height: 451px;
   }
@@ -377,6 +379,7 @@ section.consulta-medica {
     display: grid;
     grid-template-columns: 0.915fr .9934fr 0.9fr;
     gap: 1.3rem;
+    grid-gap: 1.3rem;
 
     [class*="item"] {
     }
@@ -435,6 +438,7 @@ section.optica {
     display: grid;
     grid-template-columns: 1fr 0.88fr 1fr;
     gap: 1.8rem;
+    grid-gap: 1.8rem;
   }
   .col-1,
   .col-3 {
@@ -459,6 +463,7 @@ section.padecimientos {
 
   .grid-padecimientos {
     gap: 1.3rem;
+    grid-gap: 1.3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1.07fr;
     [class*="col-"] {
@@ -521,6 +526,8 @@ section.estudios-de-gabinete {
 
   .grid-estudios-de-gabinete {
     gap: 1.3rem;
+    grid-gap: 1.3rem;
+
     display: grid;
     grid-template-columns: 1fr 0.9fr 1fr;
     grid-template-rows: auto;
@@ -603,6 +610,7 @@ section.laser {
     grid-template-columns: 0.994fr 0.77fr 0.913fr;
 
     gap: 1.3rem;
+    grid-gap: 1.3rem;
 
     .col-1,
     .col-2 {
