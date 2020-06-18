@@ -686,12 +686,12 @@ section.padecimientos {
     background-color: black;
     color: white;
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 7rem;
     padding-bottom: 10rem;
     h2 {
-      font-size: 32px;
+      font-size: 26px;
       margin: 0;
-      padding-bottom: 2rem;
+      padding-bottom: 5rem;
     }
   
     .grid-padecimientos {
