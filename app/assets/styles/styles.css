@@ -532,7 +532,7 @@ section.consulta-medica {
         padding: 0;
         flex-direction: column;
         align-items: flex-end;
-        font-size: 22px;
+        font-size: 18px;
       }
     }
   }
@@ -739,27 +739,35 @@ section.estudios-de-gabinete {
   padding-top: 4rem;
   padding-bottom: 5rem;
   .header {
+    padding-bottom: 3rem;
     padding-left: 9%;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     align-items: center;
-    margin-bottom: 4rem;
-    max-width: 1685px;
+    max-width: 1675px;
 
     .col-1 {
-      flex-basis: 30%;
+   
       height: 84px;
+
+    }
+
+    .col-2{
+
+
       .icon-gabinete {
-        width: 20%;
-        position: relative;
-        top: -101px;
-        right: -323px;
+        width: 86px;
+        margin-right: 4rem;
+        margin-left: 2rem;
+    
+
+
       }
     }
 
     .col-3 {
-      flex-basis: 68.5%;
-      margin-left: auto;
+      width: 100%;
+  
     }
 
     .title {
@@ -772,6 +780,9 @@ section.estudios-de-gabinete {
       .blue {
         color: $blue;
         margin-top: -7px;
+      }
+      .pink{
+        font-size: 28px;
       }
     }
   }
@@ -792,7 +803,7 @@ section.estudios-de-gabinete {
     flex-direction: column;
     align-items: flex-end;
     li {
-      font-size: 22px;
+      font-size: 18px;
     }
   }
 
