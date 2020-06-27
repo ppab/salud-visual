@@ -152,10 +152,10 @@ section.home {
     padding-top: 2rem;
   }
   .logo_saludvisual {
-    width: 200px;
+    width: 180px;
 
     margin-left: 3.75rem;
-    height: 200px;
+    height: 180px;
   }
   nav {
     color: white;
@@ -306,10 +306,10 @@ section.estudios-de-gabinete {
 }
 
 section.servicios {
-  margin-top: 2.1rem;
+  margin-top: 4.5rem;
   .logo-2 {
     margin-top: -2rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
   }
 
   padding-top: 4rem;
@@ -328,12 +328,14 @@ section.servicios {
     grid-gap: 1.3rem;
     overflow: hidden;
     height: 451px;
+
+    margin-bottom: -5rem;
   }
 
   h2 {
     text-align: right;
     margin: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
   }
 
   .nav-servicios {
@@ -360,8 +362,8 @@ section.servicios {
   }
 
   .vision {
-    padding-top: 2rem;
-    padding-bottom: 5rem;
+  
+    padding-bottom: 3rem;
 
     h3 {
       margin-top: 2rem;
@@ -589,7 +591,7 @@ section.optica {
       color: white;
     }
     .optica-img {
-      margin-left: 8rem;
+      
       width: 93px;
     }
   }
@@ -897,7 +899,7 @@ section.laser {
       color: white;
     }
     .laser-img {
-      margin-left: 8rem;
+     
       width: 93px;
     }
   }
